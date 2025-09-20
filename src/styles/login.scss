@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #612823;      /* Irish Coffee */
+  --secondary-color: #cbb054;   /* Sundance */
+  --background-color: #eedfc3; /* Almond */
+  --text-on-primary: #FFFFFF;    /* White text */
+  --microsoft-blue: #0067b8;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--background-color);
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 2rem;
+}
+
+.role-buttons, .login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.role-buttons button, .login-form button {
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--text-on-primary);
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 250px;
+}
+
+.role-buttons button:hover, .login-form button:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+/* --- New Styles for the Form --- */
+
+.login-form .microsoft-login-btn {
+  background-color: var(--microsoft-blue);
+  color: white;
+}
+.login-form .microsoft-login-btn:hover {
+  background-color: #005da6;
+}
+
+.login-form .back-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.input-group input {
+  border: none;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-group .domain-suffix {
+  padding: 12px;
+  background-color: #f0f0f0;
+  color: #666;
+  font-size: 16px;
+}
